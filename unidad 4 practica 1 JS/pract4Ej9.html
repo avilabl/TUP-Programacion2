@@ -1,0 +1,25 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS ejercicio 9</title>
+    </head>
+    <body>
+        <p>practica 4 ejercicio 9</p>
+        <script>
+            let cont=0
+            let frase=prompt("Por favor ingrese una frase:")
+            frase=frase.toLowerCase()
+            for(let i=0;i<frase.length;i++){
+                if(frase[i]==="a"){
+                    cont++;
+                }
+            }
+            if(cont==0){
+                document.write("No hay letra (a) en la frase")
+            }else{
+                document.write("la letra (a) aparecio "+cont+" veces en la frase")
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS ejercicio 20</title>
+    </head>
+    <body>
+        <p>practica unidad 4 JS ejercicio 20</p>
+        <script>
+            let edad=0, edades=[]
+            while(edad!=null){
+                edad=prompt("por  favor ingrese la edad de un alumno del curso")
+                if(edad!=null){
+                    edad=parseInt(edad)
+                    edades.push(edad)
+                }
+            }
+            for(let i=0;i<edades.length;i++){
+                if((i%2)==1){//muestra el mensaje cuando i es impar ya que en pantalla estan corridos
+                            //porque empieza a contar por 1 de esta forma se visualizaran los pares
+                    document.write("alumno "+(i+1)+": "+edades[i]+" años<br>")
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS ejercicio 10</title>
+    </head>
+    <body>
+        <p>practica 4 ejercicio 10</p>
+        <script>
+            let cont=0,vocA=false,vocE=false,vocI=false,vocO=false,vocU=false
+            let frase=prompt("Por favor ingrese una frase:")
+            frase=frase.toLowerCase()
+            for(let i=0;i<frase.length;i++){
+                switch (frase[i]){
+                    case "a":{
+                        vocA=true
+                        break
+                    }
+                    case "e":{
+                        vocE=true
+                        break
+                    }
+                    case "i":{
+                        vocI=true
+                        break
+                    }
+                    case "o":{
+                        vocO=true
+                        break
+                    }
+                    case "u":{
+                        vocU=true
+                        break
+                    }
+                }
+            }
+            if(vocA || vocE || vocI || vocO || vocU){
+                document.write("las letras vocales que aparecen son: ")
+                if(vocA){
+                    document.write("a ")
+                }
+                if(vocE){
+                    document.write("e ")
+                }
+                if(vocI){
+                    document.write("i ")
+                }
+                if(vocO){
+                    document.write("o ")
+                }
+                if(vocU){
+                    document.write("u ")
+                }
+            }else{
+                document.write("No hay letras vocales en la frase")
+            }
+        </script>
+    </body>
+</html>

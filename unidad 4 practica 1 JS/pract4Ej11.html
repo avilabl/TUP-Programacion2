@@ -1,0 +1,25 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS ejercicio 11</title>
+    </head>
+    <body>
+        <p>practica 4 ejercicio 11</p>
+        <script>
+            let cont=0
+            let frase=prompt("Por favor ingrese una frase:")
+            frase=frase.toLowerCase()
+            for(let i=0;i<frase.length;i++){
+                if((frase[i]=="a")||(frase[i]=="e")||(frase[i]=="i")||(frase[i]=="o")||(frase[i]=="u")){
+                    cont++
+                }
+            }
+            if(cont!=0){
+                document.write("de las "+frase.length+" letras que tiene la frase "+cont+" son vocales")
+            }else{
+                document.write("No hay letras vocales en la frase")
+            }
+        </script>
+    </body>
+</html>

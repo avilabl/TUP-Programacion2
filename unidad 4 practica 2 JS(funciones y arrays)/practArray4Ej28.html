@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS ejercicio 28</title>
+    </head>
+    <body>
+        <p>practica unidad 4 JS ejercicio 28</p>
+        <script>
+            function cadenaMayus(cadena){
+                let cadenaAux=""
+                for(i=0;i<cadena.length;i++){
+                    if(i==0){
+                        cadenaAux=cadena[i].toUpperCase()
+                    }
+                    else{
+                        if(cadena[i-1]==" "){
+                        cadenaAux=cadenaAux+cadena[i].toUpperCase()
+                        }else{
+                            cadenaAux=cadenaAux+cadena[i].toLowerCase()
+                        }
+                    }
+                }
+                document.write(cadenaAux)
+            }
+
+            cadena=prompt("por favor ingrese una oracion:")
+            cadenaMayus(cadena)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS(Funciones) ejercicio 16</title>
+    </head>
+    <body>
+        <script>
+            function Bisiesto(anio){
+                if(anio%4==0){
+                    return true
+                }else{
+                    return false
+                }
+            }
+            let cantDia=0
+            let dia=prompt("por favor ingrese el dia (en formato DD):");
+            dia=parseInt(dia);
+            let mes=prompt("por favor ingrese el mes (en formato MM):");
+            mes=parseInt(mes);
+            let anio=prompt("por favor ingrese el año (en formato AAAA):");
+            anio=parseInt(anio);
+            biAUX=Bisiesto(anio)
+            switch (mes-1){
+                case 0:{
+                    cantDia=0;
+                    break;
+                }
+                case 1:{
+                    cantDia=cantDia+31
+                    if(mes==1){
+                        break
+                    }
+                }
+                case 2:{
+                    cantDia=cantDia+28
+                    if(biAUX){
+                        cantDia++
+                    }
+                    if(mes==2){
+                        break
+                    }
+                }
+                case 3:{
+                    cantDia=cantDia+31
+                    if(mes==3){
+                        break
+                    }
+                }
+                case 4:{
+                    cantDia=cantDia+30
+                    if(mes==4){
+                        break
+                    }
+                }
+                case 5:{
+                    cantDia=cantDia+31
+                    if(mes==5){
+                        break
+                    }
+                }
+                case 6:{
+                    cantDia=cantDia+30
+                    if(mes==6){
+                        break
+                    }
+                }
+                case 7:{
+                    cantDia=cantDia+31
+                    if(mes==7){
+                        break
+                    }
+                }
+                case 8:{
+                    cantDia=cantDia+31
+                    if(mes==8){
+                        break
+                    }
+                }
+                case 9:{
+                    cantDia=cantDia+30
+                    if(mes==9){
+                        break
+                    }
+                }
+                case 10:{
+                    cantDia=cantDia+31
+                    if(mes==10){
+                        break
+                    }
+                }
+                case 11:{
+                    cantDia=cantDia+30
+                    if(mes==11){
+                        break
+                    }
+                }
+            }
+            cantDia=cantDia+dia
+            document.write("es el dia "+(cantDia)+" del año")
+            if((cantDia)==256){
+                document.write("!!! FELIZ DIA DEL PROGRAMADOR !!!")
+            }
+
+
+        </script>
+    </body>

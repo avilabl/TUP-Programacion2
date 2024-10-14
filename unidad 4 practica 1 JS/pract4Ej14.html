@@ -1,0 +1,30 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS ejercicio 14</title>
+    </head>
+    <body>
+        <p>practica unidad 4 JS ejercicio 14</p>
+        <script>
+            let AUX=false
+            let num=prompt("por favor ingrese un numero:");
+            num=parseInt(num);
+            if((num%2)==0){
+                document.write("el numero es divisible por 2<br>");
+                AUX=true
+            }if((num%3)==0){
+                document.write("el numero es divisible por 3<br>");
+                AUX=true
+            }if((num%5)==0){
+                document.write("el numero es divisible por 5<br>");
+                AUX=true
+            }if((num%7)==0){
+                document.write("el numero es divisible por 7<br>");
+                AUX=true
+            }if(!AUX){
+                document.write("el numero NO es divisible por 2 o 3 o 5 o 7")
+            }
+        </script>
+    </body>
+</html>

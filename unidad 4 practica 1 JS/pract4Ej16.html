@@ -1,0 +1,28 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS ejercicio 16</title>
+    </head>
+    <body>
+        <p>practica unidad 4 JS ejercicio 16</p>
+        <script>
+            let aux=false
+            let num1=prompt("por favor ingrese primer numero:");
+            num1=parseInt(num1);
+            let num2=prompt("por favor ingrese segundo numero:");
+            num2=parseInt(num2);
+            for(let i=2;i<=num1;i++){
+                if(num1%i==0){
+                    if(num2%i==0){
+                        document.write("el numero "+num1+" y el "+num2+" tiene como comun divisor el "+i+"<br>")
+                        aux=true
+                    }
+                }
+            }
+            if(!aux){
+                document.write("entre "+num1+" y "+num2+" no hay divisores comunes")
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS(Funciones) ejercicio 18</title>
+    </head>
+    <body>
+        <script>
+            function Bisiesto(anio){
+                if(anio%4==0){
+                    return true
+                }else{
+                    return false
+                }
+            }
+
+            function UltimoDiaDelMes(dia,mes,anio){
+                if(mes==1 || mes==3 || mes==5 || mes==7 || mes==8 || mes==10 || mes==12){
+                    return 31
+                }else{
+                    if(mes==2){
+                        if(Bisiesto(anio)){
+                            return 29
+                        }else{
+                            return 28
+                        }
+                    }else{
+                        return 30
+                    }
+                }
+
+            }
+
+            let dia=prompt("por favor ingrese el dia (en formato DD):");
+            dia=parseInt(dia);
+            let mes=prompt("por favor ingrese el mes (en formato MM):");
+            mes=parseInt(mes);
+            let anio=prompt("por favor ingrese el año (en formato AAAA):");
+            anio=parseInt(anio);
+
+            document.write("el ultimo dia del mes es: "+UltimoDiaDelMes(dia,mes,anio)+"/"+mes+"/"+anio)
+
+        </script>
+    </body>

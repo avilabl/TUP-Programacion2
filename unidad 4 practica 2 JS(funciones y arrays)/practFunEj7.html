@@ -1,0 +1,36 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS(Funciones) ejercicio 7</title>
+    </head>
+    <body>
+        <script>
+            function imprimirValores(num){
+                siguiente(num)
+                document.write("el numero siguiente a "+num+" es :"+siguiente(num)+"<br>")
+                doble(num)
+                document.write("el doble de "+num+" es: "+doble(num)+"<br>")
+                cuadrado(num)
+                document.write("el cuadrado de "+num+" es: "+cuadrado(num)+"<br>")
+            }
+            function siguiente(numero){
+                numero++;
+                return numero
+            }
+            function doble(num){
+                let doble
+                doble=num*2
+                return doble
+            }
+            function cuadrado(num){
+                let cuadrado
+                cuadrado=num*num
+                return cuadrado
+            }
+            let numero=prompt("por favor ingrese un numero:");
+            numero=parseInt(numero);
+            imprimirValores(numero);
+
+        </script>
+    </body>

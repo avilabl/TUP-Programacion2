@@ -1,0 +1,32 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS(Funciones) ejercicio 4</title>
+    </head>
+    <body>
+        <script>
+            function siguiente(numero){
+                numero++;
+                return numero
+            }
+            function notaProm(){
+                let numero=0,cont=0,acum=0
+                while(numero>=0){
+                    numero=prompt("por favor ingrese una nota mayor o iguala cero(ingrese -1 para salir)");
+                    numero=parseInt(numero);
+                    if(numero>=0){
+                        cont++;
+                        acum+=numero;
+                    }
+                }
+                return acum/cont
+            }
+            document.write("se ingresaron las notas, con un promedio de "+notaProm()+"<br>")
+            let num
+            num=prompt("por favor ingrese un numero entero");
+            num=parseInt(num);
+            document.write("el numero siguiente a "+num+" es :"+siguiente(num)+"<br>")
+
+        </script>
+    </body>

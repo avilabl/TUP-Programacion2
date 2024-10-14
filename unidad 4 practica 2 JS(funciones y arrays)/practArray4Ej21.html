@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS ejercicio 21</title>
+    </head>
+    <body>
+        <p>practica unidad 4 JS ejercicio 21</p>
+        <script>
+            function menor(arreglo){
+                let i=1
+                min=arreglo[0]
+                while(i<arreglo.length){
+                    if(arreglo[i]<min){
+                        min=arreglo[i]
+                    }
+                    i++
+                }
+                console.log(min)
+            }
+
+            let arrayPasar=[2,4,7,1,9,-1]
+            menor(arrayPasar)
+        </script>
+    </body>
+</html>

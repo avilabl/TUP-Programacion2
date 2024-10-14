@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS(Funciones) ejercicio 9</title>
+    </head>
+    <body>
+        <script>
+            function imprimirElDobleDelSiguienteAlCuadrado(num){
+                let Aux=doble(num)
+                Aux=siguiente(Aux)
+                document.write("el cuadrado del siguiente del doble de "+num+" es: "+cuadrado(Aux)+"<br>")
+            }
+            function siguiente(numero){
+                numero++;
+                return numero
+            }
+            function doble(num){
+                let doble
+                doble=num*2
+                return doble
+            }
+            function cuadrado(num){
+                let cuadrado
+                cuadrado=num*num
+                return cuadrado
+            }
+            let numero=prompt("por favor ingrese un numero:");
+            numero=parseInt(numero);
+            imprimirElDobleDelSiguienteAlCuadrado(numero);
+
+        </script>
+    </body>

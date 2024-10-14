@@ -1,0 +1,22 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS(Funciones) ejercicio 3</title>
+    </head>
+    <body>
+        <script>
+            function promedio3(num1,num2,num3){
+                let promedio
+                promedio=(num1+num2+num3)/3
+                return promedio
+            }
+                let numero1=prompt("por favor ingrese primer numero:");
+                numero1=parseInt(numero1);
+                let numero2=prompt("por favor ingrese segundo numero:");
+                numero2=parseInt(numero2);
+                let numero3=prompt("por favor ingrese tercer numero:");
+                numero3=parseInt(numero3);
+                document.write("el promedio entre "+numero1+","+numero2+" y "+numero3+" es: "+promedio3(numero1,numero2,numero3)+"<br>")
+        </script>
+    </body>

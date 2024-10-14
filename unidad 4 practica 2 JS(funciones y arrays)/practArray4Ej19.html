@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>practica unidad 4 JS ejercicio 19</title>
+    </head>
+    <body>
+        <p>practica unidad 4 JS ejercicio 19</p>
+        <script>
+            let edad=0, edades=[]
+            while(edad!=null){
+                edad=prompt("por  favor ingrese la edad de un alumno del curso")
+                if(edad!=null){
+                    edad=parseInt(edad)
+                    edades.push(edad)
+                }
+            }
+            let i=0
+            console.log(edades)
+            while(i<edades.length){
+                document.write("alumno "+(i+1)+": "+edades[i]+" años<br>")
+                i++
+            }
+        </script>
+    </body>
+</html>
